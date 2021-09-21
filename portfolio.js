@@ -11,8 +11,8 @@ window.addEventListener("DOMContentLoaded", function() {
       document.getElementById("main").style.display = "grid";
       document.getElementById("slider").style.display = "flex";
       document.getElementById("navContainer").style.visibility = "visible";
-      document.getElementById("title").style.transform = "translateY(0px)";
-      document.getElementById("head").style.transform = "translateY(0px)";
+      document.getElementById("title").style.transform = "translateY(140px)";
+      document.getElementById("head").style.transform = "translateY(140px)";
       document.getElementById("aboutP").style.display = "block";
     }
   }
@@ -23,8 +23,8 @@ window.addEventListener("DOMContentLoaded", function() {
       document.getElementById("slider").style.width = "60vw";
       document.getElementById("slider").style.display = "block";
       document.getElementById("navContainer").style.visibility = "visible";
-      document.getElementById("title").style.transform = "translateY(0px)";
-      document.getElementById("head").style.transform = "translateY(0px)";
+      document.getElementById("title").style.transform = "translateY(140px)";
+      document.getElementById("head").style.transform = "translateY(140px)";
       document.getElementById("aboutP").style.display = "block";
     }
   }
