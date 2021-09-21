@@ -1,9 +1,8 @@
-//9/20/21 Version
 <!DOCTYPE html>
 <html lang="US-en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="portfolioStyling.css">
   <link rel="icon" href="stepInside.png">
   <title>Portfolio</title>
@@ -23,6 +22,7 @@
           ____a<br>
           ____r<br>
           ____e<br>____s
+         <br><br><p id="aboutP">About<p>
         </button>
       </p>
       <div id="navContainer">
@@ -138,6 +138,7 @@
             </div>
             <button class="accordion">
               Customer Service
+            </button>
             <div class="lipanel" style="display: none;">
               <div class="list">
                 <ul>
@@ -246,38 +247,67 @@
   document.getElementById("aboutClose").addEventListener("click", aboutC);
 
   function aboutO(){
-    document.getElementById("aboutSection").style.display = "grid";
-    document.getElementById("main").style.display = "none";
+
+    if (window.matchMedia("(max-width: 700px)").matches){
+      document.getElementById("aboutSection").style.display = "flex";
+      document.getElementById("main").style.display = "none";
+    }
+    else {
+
+      document.getElementById("aboutSection").style.display = "grid";
+      document.getElementById("main").style.display = "none";
+    }
   }
   function aboutC(){
+
+  if (window.matchMedia("(max-width: 700px)").matches){
     document.getElementById("aboutSection").style.display = "none";
     document.getElementById("main").style.display = "grid";
+}
+  else {
+  document.getElementById("aboutSection").style.display = "none";
+  document.getElementById("main").style.display = null;
+  }
+
   }
 </script>
 
+<script>                  //Intro Animations
+window.addEventListener("DOMContentLoaded", function() {
 
-  <script>                  //Intro Animations
-      window.addEventListener("DOMContentLoaded", function() {
-        setTimeout (introAnim, 2000)
-        function introAnim() {
-          var headerIntro = document.getElementById("header").style.width = "48vw";
-          headerIntro;
-          var sliderIntro = document.getElementById("slider").style.width = "50.5vw";
-          sliderIntro;
-          var navIntro = document.getElementById("navContainer").style.visibility = "visible";
-          navIntro;
-          var titleIntro = document.getElementById("title").style.transform = "translateY(0px)";
-          titleIntro;
-          var titleIntro2 = document.getElementById("head").style.transform = "translateY(0px)";
-          titleIntro2;
-        };
-      });
+  if (window.matchMedia("(max-width: 700px)").matches) {
+    setTimeout (mobileIntro, 2000)
+    function mobileIntro (){
+      console.log("window screen smaller than 700px")
+      document.getElementById("header").style.width = "100vw";
+      document.getElementById("slider").style.width = "100vw";
+      document.getElementById("main").style.display = "grid";
+      document.getElementById("slider").style.display = "flex";
+      document.getElementById("navContainer").style.visibility = "visible";
+      document.getElementById("title").style.transform = "translateY(0px)";
+      document.getElementById("head").style.transform = "translateY(0px)";
+      document.getElementById("aboutP").style.display = "block";
+    }
+  }
+  else {
+    setTimeout (desktopIntro, 2000)
+    function desktopIntro() {
+      document.getElementById("header").style.width = "40vw";
+      document.getElementById("slider").style.width = "60vw";
+      document.getElementById("slider").style.display = "block";
+      document.getElementById("navContainer").style.visibility = "visible";
+      document.getElementById("title").style.transform = "translateY(0px)";
+      document.getElementById("head").style.transform = "translateY(0px)";
+      document.getElementById("aboutP").style.display = "block";
+    }
+  }
+});
 
 
-    </script>
+</script>
 
 
-    <noscript>Javascript functions incompatible with browser configurations.
-    </noscript>
-  </body>
-  </html>
+<noscript>Javascript functions incompatible with browser configurations.
+</noscript>
+</body>
+</html>
