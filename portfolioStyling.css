@@ -1,3 +1,4 @@
+
 html {
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
@@ -43,7 +44,7 @@ img {
 }
 
 #head, #title {
-	  transform:translateY(140px);
+	  transform:translateY(230px);
 	  transition: .7s;
 }
 
@@ -58,34 +59,12 @@ span {
 	  display:none;
 }
 
-/*#expand-collapse {
-	  font-family: monospace;
-	  bottom: 20px;
-	  right: 49.5vw;
-	  background-color:hsla(0,0%,0%,.4);
-	  opacity: .6;
-	  color:white;
-	  width: 200px;
-	  font-size:13px;
-	  transition: 1s;
-	  position: absolute;
-	  border-radius:5px;
-	  visibility:hidden;
-}
-
-#expand-collapse:hover {
-	  opacity:.9;
-} */
-
 /*HEADER*/
 header {
     font-family: monospace;
     font-size: 19px;
     color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-content: center;
+    display: block;
     text-align: center;
     background-color: #0017be;
     animation: color-shift 5s infinite alternate;
@@ -119,6 +98,7 @@ header {
 	  border-radius:10px;
 	  min-width:297px;
 	  visibility:hidden;
+   transform: translate(0px, 140px);
 }
 
 #nav ul {
@@ -185,7 +165,6 @@ h1 {
 
 
 #slider::-webkit-scrollbar {
-
     background-color: #000000;
     border-radius: 10px;
     animation: color-shift-scroll 11s infinite alternate;
@@ -336,6 +315,25 @@ section {
 }
 
 @media only screen and (max-width: 700px) {
+
+#slider {
+  height: min-content;
+  max-height:none;
+}
+
+#slider::-webkit-scrollbar, #slider::-webkit-scrollbar-thumb  {
+  display:none;
+}
+
+button:hover,
+a:hover{
+  filter:none;
+}
+
+button:focus; a:focus {
+  filter:drop-shadow(5px -5px darkblue);
+}
+
  #aboutSection {
   display: none;
   flex-direction: column;
@@ -350,8 +348,6 @@ section {
  top:0px;
  left:0px;
 }
-}
-
 #aboutText h1 {
     padding:  20px;
     margin: 10px;
