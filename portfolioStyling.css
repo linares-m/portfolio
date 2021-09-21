@@ -362,6 +362,10 @@ button:focus; a:focus {
 
 }
 
+#title, #head {
+  transform: translate(0px, 200px);
+}
+}
 
 #aboutLink {
   background-color: hsla(0,100%,100%,0%);
