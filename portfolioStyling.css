@@ -20,8 +20,7 @@ body {
 
 #main {
     position: relative;
-    grid:'header slider';
-    display: grid;
+    display: flex;
     transition:.4s;
 }
 
@@ -59,7 +58,7 @@ span {
 	  display:none;
 }
 
-#expand-collapse {
+/*#expand-collapse {
 	  font-family: monospace;
 	  bottom: 20px;
 	  right: 49.5vw;
@@ -76,11 +75,10 @@ span {
 
 #expand-collapse:hover {
 	  opacity:.9;
-}
+} */
 
 /*HEADER*/
 header {
-    grid-area: header;
     font-family: monospace;
     font-size: 19px;
     color: white;
@@ -98,7 +96,6 @@ header {
     min-width: auto;
     margin: 0px;
     flex-wrap: wrap;
-    grid-column-end: 1;
 	  transition:.7s;
 }
 
@@ -167,7 +164,7 @@ h1 {
 
 /*SLIDER*/
 #slider {
-    display: flex;
+    display: none;
     flex-direction: column;
     overflow: scroll;
     scroll-snap-type: y proximity;
@@ -176,7 +173,7 @@ h1 {
     min-height: 100vh;
     height: 100vh;
     width: 0vw;
-    max-width: 50.5vw;
+    max-width: 100vw;
     min-width:303px;
     margin:0px;
   	transition:.7s;
@@ -201,9 +198,7 @@ h1 {
 
 /*SLIDER:SECTIONS*/
 section {
-    min-width: 303px;
-    width: 50.5vw;
-    max-width: 50.5vw;
+    width: inherit;
     text-align: center;
     font-family: monospace;
     min-height: 100vh;
@@ -225,14 +220,11 @@ section {
 }
 
 .accordionHeader {
-    width: 50.5vw;
-    min-width: 303px;
-    max-width: 50.5vw;
+    width: inherit;
     color: white;
     background-color: hsla(0,0%,0%,.5);
     transition: all 0.4s;
     font-family: monospace;
-    font-size: 70px;
     align-content: center;
     justify-content: center;
     height: 50vh;
@@ -241,9 +233,7 @@ section {
 }
 
 .accordion {
-    width: 50.5vw;
-    min-width: 303px;
-   	max-width: 50.5vw;
+    width: inherit;
     color: white;
     background-color: hsla(0,0%,0%,.4);
     transition: all 0.4s;
@@ -260,34 +250,25 @@ section {
   background-color: hsla(0,100%,100%,.4);
   color: black;
   font-weight: bold;
- 	width:50.5vw;
-  max-width: 50.5vw;
-  min-width: 303px;
-
+ 	width:inherit;
 }
 
 .accordionHeader:hover {
     background-color: hsla(0,100%,100%,.1);
-    color: black;
-    font-weight: bold;
-    filter:drop-shadow(5px -5px white);
+    color: white;
 }
 
 .activeH {
     height: min-content;
   	min-height:50vh;
- 	  width:50.5vw;
-    max-width: 50.5vw;
-    min-width: 303px;
+ 	  width:inherit;
 }
 
 .sliderSection {
     height: min-content;
     min-height:min-content;
 	  max-height:min-content;
-   	width:50.5vw;
-    max-width: 50.5vw;
-    min-width: 303px;
+   	width:inherit;
 }
 
 .panel {
@@ -295,8 +276,7 @@ section {
     background-color: hsla(0,0%,0%,.5);
     color: white;
     font-size: 18px;
-    min-width: 303px;
-    max-width: 50.5vw;
+    width: inherit;
     height: min-content;
   	max-height:max-content;
   	min-height:50vh;
@@ -310,8 +290,7 @@ section {
     background-color: hsla(0,0%,0%,.5);
     color: white;
     font-size: 18px;
-    min-width: 303px;
-    max-width: 50.5vw;
+    width: inherit;
     height: min-content;
   	max-height:max-content;
   	min-height:min-content;
@@ -325,15 +304,13 @@ section {
     background-color: hsla(0,100%,100%,.2);
     list-style-type: none;
     padding: 1em;
-	  min-width: 303px;
-    max-width: 50.5vw;
+	  width:inherit;
 }
 
 .panel ul li, .lipanel ul li {
     padding-top: 10px;
     padding-bottom: 20px;
-	  min-width: 303px;
-    max-width: 50.5vw;
+	  width:inherit;
     overflow-wrap: normal;
 	  padding-right:3px;
 }
@@ -358,6 +335,23 @@ section {
    font-size: 25px;
 }
 
+@media only screen and (max-width: 700px) {
+ #aboutSection {
+  display: none;
+  flex-direction: column;
+  font-size: larger;
+ width: 100vw;
+ height: 100vh;
+ background-color: black;
+ opacity: 85%;
+ color: white;
+ z-index: 10;
+ position:absolute;
+ top:0px;
+ left:0px;
+}
+}
+
 #aboutText h1 {
     padding:  20px;
     margin: 10px;
@@ -378,6 +372,9 @@ section {
   border: 0px;
   font: inherit;
   color:white;
+}
+#aboutP {
+  display:none;
 }
 
 #aboutLink:hover {
