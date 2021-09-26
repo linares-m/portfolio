@@ -1,5 +1,5 @@
 <!-- TO DO
-1. responsive - check :focus styling
+use <figure> for the site screenshots
 -->
 
 <!DOCTYPE html>
@@ -7,13 +7,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="portfolioStyling.css">
-  <script type="text/javascript" src="portfolio.js"></script>
+  <link rel="stylesheet" href="portfolioStylingResponsive.css">
+  <script type="text/javascript" src="portfolioResponsive.js"></script>
   <link rel="icon" href="stepInside.png">
   <title>Portfolio</title>
 </head>
 <body id="body">
   <main id="main">
+
+<button id="returnToTop" >
+<a href="#title">Return To Top</a>
+</button>
     <header id="header">
       <h1 id="title">
         Projects<br>
@@ -54,8 +58,12 @@
           <div class="panel" style="display: none;">
             <div class="list">
               <ul>
+                 <li>
+                  Interactive Periodic Table Of Elements <br>
+                  <a href="https://chemistry-reference-periodic-table.netlify.app/" target="_blank"><img src="PTPrototype.png" alt="periodic table prototype" style="width:24.25vw; margin:10px;"></a>
+                </li>
                 <li>
-                  "Dock Operator" - WIP - A simple desktop browser game programmed with HTML5. Features CSS3-powered animation. Vanilla JS used for RNGs, data type conversion, and conditional scoring system. <br>
+                  "Dock Operator" - A simple desktop browser game programmed with HTML5. Features CSS3-powered animation. Vanilla JS used for RNGs, data type conversion, and conditional scoring system. <br>
                   <a href="https://dockoperator.w3spaces.com/" target="_blank"><img src="game-screenshot.png" alt="game screenshot" style="width:24.25vw; margin:10px;"></a>
                 </li>
                 <li>
@@ -200,17 +208,18 @@
       <ul>
         <li>Current goals include:
           <ul>
-            <li>- Find work developing valuable web products</li>
-            <li>- Learn about web and network security</li>
-            <li>- Create great tools and art</li>
-            <li>- Become a better self-taught web developer and programmer</li>
+            <li>Find work developing valuable web products</li>
+            <li>Learn about web and network security</li>
+            <li>Create great tools and art</li>
+            <li>Become a better self-taught web developer and programmer</li>
           </ul>
         </li>
         <br>
         <li>Educational background in natural and health sciences</li>
-
         <br>
         <li>Best days include the joys of food, music, and nature</li>
+        <br>
+        <li>Feel free to connect on Github: https://github.com/linares-m</li>
       </ul>
       <button id="aboutClose">Close</button>
     </div>
