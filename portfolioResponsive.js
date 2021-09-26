@@ -11,8 +11,9 @@ window.addEventListener("DOMContentLoaded", function() {
       document.getElementById("main").style.display = "grid";
       document.getElementById("slider").style.display = "flex";
       document.getElementById("navContainer").style.visibility = "visible";
-      document.getElementById("title").style.transform = "translateY(140px)";
-      document.getElementById("head").style.transform = "translateY(140px)";
+   //   document.getElementById("title").style.transform = "translateY(40px)";
+   //   document.getElementById("head").style.transform = "translateY(-10px)";
+       document.getElementById("head").style.display = "block";
       document.getElementById("aboutP").style.display = "block";
     }
   }
