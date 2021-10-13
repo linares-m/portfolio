@@ -21,7 +21,7 @@ window.addEventListener("DOMContentLoaded", function() {
     setTimeout (desktopIntro, 2000)
     function desktopIntro() {
       document.getElementById("header").style.width = "40vw";
-      document.getElementById("slider").style.width = "60vw";
+      document.getElementById("slider").style.width = "min-content";
       document.getElementById("slider").style.display = "block";
       document.getElementById("navContainer").style.visibility = "visible";
       document.getElementById("title").style.transform = "translateY(140px)";
