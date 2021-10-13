@@ -304,7 +304,7 @@ section {
 
 #aboutSection {
   display: none;
-  grid: 'header header' 'about-photo about-text';
+  grid: 'about-photo header' 'about-photo about-text';
   width: 100vw;
   height: 100vh;
   transition: .2s;
