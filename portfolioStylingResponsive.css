@@ -150,7 +150,7 @@ h1 {
 #slider {
   display: none;
   flex-direction: column;
-  overflow: scroll;
+  overflow-Y: scroll;
   scroll-snap-type: y proximity;
   font-family: monospace;
   max-height: 100vh;
@@ -181,7 +181,7 @@ h1 {
 
 /*SLIDER:SECTIONS*/
 section {
-  width: inherit;
+  width: 60vw;
   text-align: center;
   font-family: monospace;
   min-height: 100vh;
@@ -203,7 +203,7 @@ section {
 }
 
 .accordionHeader {
-  width: inherit;
+  width: 60vw;
   color: white;
   background-color: hsla(0,0%,0%,.5);
   transition: all 0.4s;
@@ -216,7 +216,7 @@ section {
 }
 
 .accordion {
-  width: inherit;
+  width: 60vw;
   color: white;
   background-color: hsla(0,0%,0%,.4);
   transition: all 0.4s;
@@ -233,7 +233,7 @@ section {
   background-color: hsla(0,100%,100%,.4);
   color: black;
   font-weight: bold;
-  width:inherit;
+  width:60vw;
 }
 
 .accordionHeader:hover {
@@ -244,14 +244,14 @@ section {
 .activeH {
   height: min-content;
   min-height:50vh;
-  width:inherit;
+  width:60vw;
 }
 
 .sliderSection {
   height: min-content;
   min-height:min-content;
   max-height:min-content;
-  width:inherit;
+  width:60vw;
 }
 
 .panel {
@@ -259,7 +259,7 @@ section {
   background-color: hsla(0,0%,0%,.5);
   color: white;
   font-size: 18px;
-  width: inherit;
+  width: 60vw;
   height: min-content;
   max-height:max-content;
   min-height:50vh;
@@ -273,7 +273,7 @@ section {
   background-color: hsla(0,0%,0%,.5);
   color: white;
   font-size: 18px;
-  width: inherit;
+  width: 60vw;
   height: min-content;
   max-height:max-content;
   min-height:min-content;
@@ -287,13 +287,13 @@ section {
   background-color: hsla(0,100%,100%,.2);
   list-style-type: none;
   padding: 1em;
-  width:inherit;
+  width:60vw;
 }
 
 .panel ul li, .lipanel ul li {
   padding-top: 10px;
   padding-bottom: 20px;
-  width:inherit;
+  width:60vw;
   overflow-wrap: normal;
   padding-right:3px;
 }
