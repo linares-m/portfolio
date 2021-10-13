@@ -433,8 +433,7 @@ section {
 
 #aboutClose {
   display:block;
-  margin-left:auto;
-  margin-right:auto;
+  margin: 60px auto 0px auto;
   background-color: hsla(0,0%,0%,0%);
   border:none;
   color:white;
@@ -458,7 +457,7 @@ button:hover{
 
 #aboutText {
   grid-area: about-text;
-  margin: auto;
+  margin: 10px 20px 40px 20px;
 }
 
 #aboutSection h1 {
