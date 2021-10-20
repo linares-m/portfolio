@@ -1,4 +1,3 @@
-
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
@@ -86,7 +85,7 @@ header {
   from {
     background-color: #0017be;
   }
-  
+
   to {
     background-color: #00769d;
   }
@@ -115,7 +114,7 @@ header {
   list-style-type:none;
   width:100%;
   opacity:.8;
-  
+
 }
 
 #nav a {
@@ -287,13 +286,13 @@ section {
   background-color: hsla(0,100%,100%,.2);
   list-style-type: none;
   padding: 1em;
-  width:60vw;
+  width:AUTO;
 }
 
 .panel ul li, .lipanel ul li {
   padding-top: 10px;
   padding-bottom: 20px;
-  width:60vw;
+  width:AUTO;
   overflow-wrap: normal;
   padding-right:3px;
 }
@@ -316,104 +315,6 @@ section {
   top:0px;
   left:0px;
   font-size: 25px;
-}
-
-/* MOBILE STYLING */
-@media only screen and (max-width: 700px) {
-  #header {
-    display: flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    align-content:center;
-    min-height:100vh;
-    height:100vh;
-  }
-  
-  #returnToTop {
-    display:block;
-    position: fixed;
-    bottom: 10px;
-    right: 20px;
-    background-color: hsla(360, 100%, 100%, 0.1);
-    color:white;
-    z-index: 10;
-  }
-  
-  #returnToTop a {
-    text-decoration: none;
-  }
-  
-  #title {
-    display:block;
-    height:min-content;
-    margin:10px;
-    transform:translateY(0px);
-    min-height:min-content;
-    font-size:20px;
-  }
-  
-  #head {
-    display:none;
-    left: 20px;
-    top:50px;
-    font-size:15px;
-    height:min-content;
-    min-height:min-content;
-    margin:10px;
-    transform:translate(0px,0px);
-    transition:1s;
-  }
-  
-  #navContainer {
-    display:block;
-    height: min-content;
-    transform: translate(0px, 0px);
-    margin:10px;
-    min-height:min-content;
-    width:min-content;
-  }
-  
-  #slider {
-    height: min-content;
-    max-height:none;
-  }
-  #slider::-webkit-scrollbar, #slider::-webkit-scrollbar-thumb  {
-    display:none;
-  }
-  button:hover, a:hover{
-    filter:none;
-  }
-  button:focus; a:focus {
-    filter:drop-shadow(5px -5px darkblue);
-  }
-  #aboutSection {
-    display: none;
-    flex-direction: column;
-    font-size: larger;
-    width: 100vw;
-    height: fit-content;
-    min-height: 100vh; 
-    background-color: black;
-    opacity: 85%;
-    color: white;
-    z-index: 10;
-    position:absolute;
-    top:0px;
-    left:0px;
-  }
-  #aboutText h1 {
-    padding:  20px;
-    margin: 10px;
-  }
-  
-  #aboutText ul {
-    margin: 10px;
-    padding:20px;
-    display:block;
-    text-align:left;
-    list-style-type:none;
-  }
-  
 }
 
 #aboutLink {
@@ -465,4 +366,171 @@ button:hover{
   flex-direction: row;
   grid-area: header;
   margin:0px;
+}
+
+/*------------------------------ MOBILE STYLING-------------------------------- */
+
+@media only screen and (max-width: 700px) {
+  #header {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-content:center;
+    min-height:100vh;
+    height:100vh;
+    width: 100vw;
+  }
+
+  #returnToTop {
+    display:block;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    background-color: hsla(360, 100%, 100%, 0.1);
+    color:white;
+    z-index: 10;
+  }
+
+  #returnToTop a {
+    text-decoration: none;
+  }
+
+  #title {
+    display:block;
+    height:min-content;
+    margin:10px;
+    transform:translateY(0px);
+    min-height:min-content;
+    font-size:20px;
+  }
+
+  #head {
+    display:block;
+    left: 20px;
+    top:50px;
+    font-size:15px;
+    height:min-content;
+    min-height:min-content;
+    margin:10px;
+    transform:translate(0px,0px);
+    transition:1s;
+  }
+
+  #navContainer {
+    display:block;
+    height: min-content;
+    transform: translate(0px, 0px);
+    margin:10px;
+    min-height:min-content;
+    width:min-content;
+    visibility: visible;
+  }
+
+  #slider {
+    display: flex;
+    height: min-content;
+    max-height:none;
+    width: 100vw;
+  }
+  #slider::-webkit-scrollbar, #slider::-webkit-scrollbar-thumb  {
+    display:none;
+  }
+  button:hover, a:hover{
+    filter:none;
+  }
+  button:focus; a:focus {
+    filter:drop-shadow(5px -5px darkblue);
+  }
+  #aboutSection {
+    display: none;
+    flex-direction: column;
+    font-size: larger;
+    width: 100vw;
+    height: fit-content;
+    min-height: 100vh;
+    background-color: black;
+    opacity: 85%;
+    color: white;
+    z-index: 10;
+    position:absolute;
+    top:0px;
+    left:0px;
+  }
+  #aboutText h1 {
+    padding:  20px;
+    margin: 10px;
+  }
+
+  #aboutText ul {
+    margin: 10px;
+    padding:20px;
+    display:block;
+    text-align:left;
+    list-style-type:none;
+  }
+  #aboutP {
+    display: block;
+  }
+  #slider {
+    display: flex;
+    width: 100vw;
+  }
+
+  #main {
+    display:grid;
+  }
+
+  section, .sliderSection,
+
+  .accordionHeader, .accordionHeader:active,
+  .accordion, .accordion:active,
+  .panel, .panel:active,
+  .lipanel, .lipanel:active,
+  .list {
+    width:100vw !important;
+  }
+  .panel ul, .panel li,
+  .lipanel ul, .lipanel li {
+    width: 90vw !important;
+  }
+}
+
+@media only screen and (max-height: 400px) {
+  #header {
+    display: grid;
+    grid-template-columns: 10% 35% 55%;
+    justify-content:space-between;
+    align-content:center;
+    min-height:100vh;
+    height:100vh;
+    width: 100vw;
+  }
+
+  #title {
+    display:block;
+    height:min-content;
+    margin-left:-10vw;
+    min-height:min-content;
+    font-size:20px;
+  }
+
+  #head {
+    display:block;
+    font-size:12px;
+    height:min-content;
+    min-height:min-content;
+    margin-left: 15vw;
+  }
+
+  .accordionHeader, .accordionHeader:active,
+  .accordion, .accordion:active,
+  .panel, .panel:active,
+  .lipanel, .lipanel:active,
+  .list {
+    width:100vw !important;
+  }
+  .panel ul, .panel li,
+  .lipanel ul, .lipanel li {
+    width: 94.5vw !important;
+  }
 }
