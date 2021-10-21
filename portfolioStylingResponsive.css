@@ -105,6 +105,7 @@ header {
   min-height: 100vh;
   max-height: 100vh;
   height: 100vh;
+  overflow-y: hidden;
   width: 100vw;
   min-width: auto;
   margin: 0px;
