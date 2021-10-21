@@ -1,3 +1,32 @@
+/* #colorGrid1  {
+position: absolute;
+top: 0px;
+left: 0px;
+height:100%;
+width:600px;
+outline:white;
+z-index: 1;
+}
+#colorGrid2  {
+position: absolute;
+top: 660px;
+left: 0px;
+height:100%;
+width:600px;
+outline:white;
+z-index: 1;
+}
+rect{
+z-index: 1 !important;
+background-color: none;
+transition: .35s;
+}
+svg{
+  width: 100% !important;
+  height: 100px !important;
+  z-index: 2 !important;
+} */
+
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
@@ -9,7 +38,8 @@ html {
 
 body {
   margin: 0;
-  background-color: #0017be;
+  background-color: black;
+  animation: color-shift 5s infinite alternate;
   color: white;
   font-family: monospace;
   height: 100vh;
@@ -48,8 +78,10 @@ img {
 }
 
 #head, #title {
-  transform:translateY(230px);
+  transform:translateY(50px);
   transition: .7s;
+/*  background-color: hsla(0,100%,50%,.2);*/
+  background-clip: content-box;
 }
 
 span {
@@ -70,8 +102,6 @@ header {
   color: white;
   display: block;
   text-align: center;
-  background-color: #0017be;
-  animation: color-shift 5s infinite alternate;
   min-height: 100vh;
   max-height: 100vh;
   height: 100vh;
@@ -83,11 +113,11 @@ header {
 
 @keyframes color-shift {
   from {
-    background-color: #0017be;
+    background-color: rgba(0,23,190,1);
   }
 
   to {
-    background-color: #00769d;
+    background-color: rgba(0,118,157,1);
   }
 }
 
@@ -101,7 +131,7 @@ header {
   border-radius:10px;
   min-width:297px;
   visibility:hidden;
-  transform: translate(0px, 140px);
+  transform: translate(0px, 60px);
 }
 
 #nav ul {
@@ -164,6 +194,9 @@ h1 {
   margin-top:-12px;
   justify-content: flex-start;
   align-items: stretch;
+  z-index: 3;
+  outline: 1px solid black;
+  resize:horizontal;
 }
 
 
@@ -185,6 +218,7 @@ section {
   font-family: monospace;
   min-height: 100vh;
   height:min-content;
+  outline:inherit;
 }
 
 
@@ -204,7 +238,7 @@ section {
 .accordionHeader {
   width: 60vw;
   color: white;
-  background-color: hsla(0,0%,0%,.5);
+  background-color: hsla(0,0%,0%,.3);
   transition: all 0.4s;
   font-family: monospace;
   align-content: center;
@@ -212,6 +246,7 @@ section {
   height: 50vh;
   min-height:min-content;
   max-height:max-content;
+  outline:inherit;
 }
 
 .accordion {
@@ -226,6 +261,7 @@ section {
   min-height: min-content;
   max-height: max-content;
   height:100px;
+  outline:inherit;
 }
 
 .active, .accordion:hover {
@@ -251,6 +287,7 @@ section {
   min-height:min-content;
   max-height:min-content;
   width:60vw;
+  outline: inherit;
 }
 
 .panel {
@@ -310,7 +347,7 @@ section {
   background-color: black;
   opacity: .85;
   color: white;
-  z-index: 10;
+  z-index: 2;
   position:absolute;
   top:0px;
   left:0px;
@@ -388,7 +425,7 @@ button:hover{
     right: 20px;
     background-color: hsla(360, 100%, 100%, 0.1);
     color:white;
-    z-index: 10;
+    z-index: 4;
   }
 
   #returnToTop a {
@@ -451,7 +488,7 @@ button:hover{
     background-color: black;
     opacity: 85%;
     color: white;
-    z-index: 10;
+    z-index: 2;
     position:absolute;
     top:0px;
     left:0px;
@@ -493,9 +530,13 @@ button:hover{
   .lipanel ul, .lipanel li {
     width: 90vw !important;
   }
+/* .colorGrid{
+  width:inherit;
+  overflow:hidden;
+} */
 }
 
-@media only screen and (max-height: 400px) {
+@media only screen and (max-height: 400px, max-width:700px) {
   #header {
     display: grid;
     grid-template-columns: 10% 35% 55%;
@@ -533,4 +574,9 @@ button:hover{
   .lipanel ul, .lipanel li {
     width: 94.5vw !important;
   }
+
+/* .colorGrid{
+  width:100%;
+  overflow:hidden;
+} */
 }

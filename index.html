@@ -1,4 +1,4 @@
-<!-- TO DO TWEAK HEADER FOR MOBILE!-->
+<!-- TO DO: tweak landscape orientation header-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,11 +11,19 @@
 </head>
 <body id="body">
   <main id="main">
+    <button id="returnToTop" >
+      <a href="#title">Return To Top</a>
+    </button>
 
-<button id="returnToTop" >
-<a href="#title">Return To Top</a>
-</button>
     <header id="header">
+<svg class="colorGrid" id="colorGrid1">
+  <rect fill="rgba(0, 170, 255, 0)" height="100" width="100" ry="10" rx="10"  y="000" x="000"></rect>
+  <rect fill="rgba(0, 170, 255, 0)" height="100" width="100" ry="10" rx="10"  y="000" x="100"></rect>
+  <rect fill="rgba(0, 170, 255, 0)" height="100" width="100" ry="10" rx="10"  y="000" x="200"></rect>
+  <rect fill="rgba(0, 170, 255, 0)" height="100" width="100" ry="10" rx="10"  y="000" x="300"></rect>
+  <rect fill="rgba(0, 170, 255, 0)" height="100" width="100" ry="10" rx="10"  y="000" x="400"></rect>
+  <rect fill="rgba(0, 170, 255, 0)" height="100" width="100" ry="10" rx="10"  y="000" x="500"></rect>
+</svg>
       <h1 id="title">
         Projects<br>
         +<br>Experience
@@ -28,199 +36,208 @@
           ____a<br>
           ____r<br>
           ____e<br>____s
-         <br><br><p id="aboutP">About<p>
-        </button>
+          <br><br><p id="aboutP">About<p>
+          </button>
         </p>
-      <div id="navContainer">
-        <ul id="nav" style="padding-inline-start: 0px">
-          <li>
-            <a href="#frontEndSection">Front End Web Development</a>
-          </li>
-          <li>
-            <a href="#socMedAnalysisSection">Social Media Analysis</a>
-          </li>
-          <li>
-            <a href="#workExperienceSection">Work Experience</a>
-          </li>
-        </ul>
-      </div>
-    </header>
-    <div id="slider">
-      <section class="sliderSection" id="frontEndSection" >
-        <button class="accordionHeader" id="frontEndAcc" style="background-image: url('rgb3dGallery-2.png');background-repeat:no-repeat;background-size:100%;background-position:center;min-height: min-content;background-attachment:scroll;">
-          <h2>Front End Web Development</h2>
-        </button>
-        <div class="panel" id="frontEndPan" style="display: none;">
-          <button class="accordion">Projects (2021)</button>
-          <div class="panel" style="display: none;">
-            <div class="list">
-              <ul>
-                 <li>
-                  Interactive Periodic Table Of Elements <br>
-                  <a href="https://chemistry-reference-periodic-table.netlify.app/" target="_blank"><img src="PTPrototype4.png" alt="periodic table prototype" style="width:24.25vw; margin:10px;"></a>
-                </li>
-                <li>
-                  "Dock Operator" - A simple desktop browser game programmed with HTML5. Features CSS3-powered animation. Vanilla JS used for RNGs, and lots of painful data conversion. Simple game, complicated code. Needs refactoring, up the wazoo.  <br>
-                  <a href="https://dockoperator.w3spaces.com/" target="_blank"><img src="game-screenshot.png" alt="game screenshot" style="width:24.25vw; margin:10px;"></a>
-                </li>
-                <li>
-                  <a href="https://moon-calculator.netlify.app/">Moon Calculator</a>
-                </li>
-                <li>
-                  <a href="https://recommend-ghibli-movie.netlify.app/">First Web API Integration</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <button class="accordion">Languages</button>
-          <div class="panel">
-            <div class="list">
-              <ul>
-                <li><img src="html-logo.png" alt="html-logo" style="width:15vw; margin:10px;"></li>
-                <li><img src="CSS3-logo.png" alt="css3-logo" style="width:11vw; margin:10px;"></li>
-                <li><img src="JavaScript-logo.png" alt="js-logo" style="width:24vw; margin:10px;"</li>
-                <li>Familiarity with SQL and Python</li>
-              </ul>
-            </div>
-          </div>
-          <button class="accordion">Visuals for Web Design</button>
-          <div class="panel">
-            <div class="list">
-              <ul>
-                <li>Vector Art<br><img src="dtn.png" alt="vector-art-sample"</li>
-                <li>Logo Design<br><img src="mswd3.png" alt="logo-design-sample"></img></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="sliderSection" id="socMedAnalysisSection">
-        <button class="accordionHeader" id="socMedAnalysisAcc" style="background-image: url('rgb3dGallery-3.png');background-repeat:no-repeat;background-size:100%;background-position:center;min-height: min-content;background-attachment:scroll;">
-          <h2>Social Media Analysis</h2>
-        </button>
-        <div class="panel" id="socMedAnalysisPan">
-          <button class="accordion">
-            Content Clustering Model Testing  | Accenture
-            <br>(2019-2020)
-          </button>
-          <div class="lipanel" style="display: none;">
-            <div class="list">
-              <ul>
-                <li>Benchmarked precision of machine learning model against content review guidelines
-                  in collaboration with client engineers and policy experts</li>
-                  <li>Performed qualitative and quantitative analyses of social media content and associated assets</li>
-                  <li>Project resulted in 400% increase in model production</li>
-                </ul>
-              </div>
-            </div>
-            <button class="accordion">
-              Cross-Functional Tool Pilot Project | Accenture
-              <br>(Jan 2019 – Mar 2020)
-            </button>
-            <div class="lipanel" style="display: none;">
-              <div class="list">
-                <ul>
-                  <li>Test monitoring tool capabilities for analytic tasks</li>
-                  <li>Recommend features to client engineers that would optimize tool for risk assessment and threat investigations</li>
-                  <li>Document, track, and help troubleshoot tool bugs</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="sliderSection" id="workExperienceSection">
-          <button class="accordionHeader" id="workExperienceAcc" style="background-image: url('rgb3dGallery-4.png');background-repeat:no-repeat;background-size:100%;background-position:center;min-height: min-content;background-attachment:scroll;">
-            <h2>Work Experience</h2>
-          </button>
-          <div class="panel" id="workExperiencePan">
-            <button class="accordion">
-              Content Analyst
-            </button>
-            <div class="lipanel" style="display: none;">
-              <div class="list">
-                <ul>
-                  <li>Social Media Policy Enforcement</li>
-                  <li>ML Model Training</li>
-                  <li>Policy Development</li>
-                </ul>
-              </div>
-            </div>
-            <button class="accordion">
-              Customer Service
-            </button>
-            <div class="lipanel" style="display: none;">
-              <div class="list">
-                <ul>
-                  <li>Analyzing SMB UI and Customer Success tools</li>
-                  <li>Consulting with trend reports, quantitative and qualitative analysis, and cross-functional projects</li>
-                  <li>Coordinating with patient navigators and third parties in delivering patient assistance program services</li>
-                </ul>
-              </div>
-            </div>
-            <button class="accordion">
-              Lecture Materials Developer
-            </button>
-            <div class="lipanel" style="display: none;">
-              <div class="list">
-                <ul>
-                  <li>Create infographics</li>
-                  <li>Edit lecture outline</li>
-                  <li>Prepare lecture presentation slides</li>
-                </ul>
-              </div>
-            </div>
-            <button class="accordion">
-              Sales
-            </button>
-            <div class="lipanel" style="display: none;">
-              <div class="list">
-                <ul>
-                  <li>Telecommunications sales account management</li>
-                  <li>Lead Generation and Lead Conversion</li>
-                  <li>Upselling experience in the hospitality industry</li>
-                </ul>
-              </div>
-            </div>
-            <button class="accordion">
-              Technical Support
-            </button>
-            <div class="lipanel" style="display: none;">
-              <div class="list">
-                <ul>
-                  <li>Call center experience assisting customers with technical service problems and payment account issues</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-  </main>
-  <div id="aboutSection">
-    <h1>A little about me:</h1>
-    <div id="aboutPhoto">
-      <img src="commonCauseColor.svg" alt="icon featuring overlapping hearts"/>
-    </div>
-    <div id="aboutText">
-      <ul>
-        <li>Current goals include:
-          <ul>
-            <li>Find work developing valuable web products</li>
-            <li>Learn about web and network security</li>
-            <li>Create great tools and art</li>
-            <li>Become a better self-taught web developer and programmer</li>
+        <div id="navContainer">
+          <ul id="nav" style="padding-inline-start: 0px">
+            <li>
+              <a href="#frontEndSection">Front End Web Development</a>
+            </li>
+            <li>
+              <a href="#socMedAnalysisSection">Social Media Analysis</a>
+            </li>
+            <li>
+              <a href="#workExperienceSection">Work Experience</a>
+            </li>
           </ul>
-        </li>
-        <li>Educational background in natural and health sciences</li>
-        <li>Best days include the joys of food, music, and nature</li>
-        <li>Feel free to connect on Github: https://github.com/linares-m</li>
-      </ul>
-      <button id="aboutClose">Close</button>
-    </div>
-  </div>
+        </div>
+<svg class="colorGrid" id="colorGrid2">
+  <rect fill="rgba(0, 170, 255, 0)" height="100" width="100" ry="10" rx="10"  y="000" x="000"></rect>
+  <rect fill="rgba(0, 170, 255, 0)" height="100" width="100" ry="10" rx="10"  y="000" x="100"></rect>
+  <rect fill="rgba(0, 170, 255, 0)" height="100" width="100" ry="10" rx="10"  y="000" x="200"></rect>
+  <rect fill="rgba(0, 170, 255, 0)" height="100" width="100" ry="10" rx="10"  y="000" x="300"></rect>
+  <rect fill="rgba(0, 170, 255, 0)" height="100" width="100" ry="10" rx="10"  y="000" x="400"></rect>
+  <rect fill="rgba(0, 170, 255, 0)" height="100" width="100" ry="10" rx="10"  y="000" x="500"></rect>
+</svg>
+      </header>
+      <div id="slider">
+        <section class="sliderSection" id="frontEndSection" >
+          <button class="accordionHeader" id="frontEndAcc" style="background-image: url('rgb3dGallery-2.png');background-repeat:no-repeat;background-size:100%;background-position:center;min-height: min-content;background-attachment:scroll;">
+            <h2>Front End Web Development</h2>
+          </button>
+          <div class="panel" id="frontEndPan" style="display: none;">
+            <button class="accordion">Projects (2021)</button>
+            <div class="panel" style="display: none;">
+              <div class="list">
+                <ul>
+                  <li>
+                    Interactive Periodic Table Of Elements <br>
+                    <a href="https://chemistry-reference-periodic-table.netlify.app/" target="_blank"><img src="PTPrototype4.png" alt="periodic table prototype" style="width:24.25vw; margin:10px;"></a>
+                  </li>
+                  <li>
+                    "Dock Operator" - A simple desktop browser game programmed with HTML5. Features CSS3-powered animation. Vanilla JS used for RNGs, and lots of painful data conversion. Simple game, complicated code. Needs refactoring, up the wazoo.  <br>
+                    <a href="https://dockoperator.w3spaces.com/" target="_blank"><img src="game-screenshot.png" alt="game screenshot" style="width:24.25vw; margin:10px;"/></a>
+                  </li>
+                  <li>
+                     Moon Calculator - homebrewed equations based on Javascript's built-in getTime methods.
+                    <a href="https://moon-calculator.netlify.app/"> <img src="moonCalculator.png" alt="screenshot of moon calculator website featuring image of moon" style="width:24.25vw; margin:10px;"/></a>
+                  </li>
+                  <li>
+                      "Studio Ghibli Recommendations" - First Web API Integration
+                    <a href="https://recommend-ghibli-movie.netlify.app/" target="_blank"><img src="firstAPI.png" alt="first api - random studio ghibli recommendation generator" style="width:24.25vw; margin:10px;"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button class="accordion">Languages</button>
+            <div class="panel">
+              <div class="list">
+                <ul>
+                  <li><img src="html-logo.png" alt="html-logo" style="width:15vw; margin:10px;"></li>
+                  <li><img src="CSS3-logo.png" alt="css3-logo" style="width:11vw; margin:10px;"></li>
+                  <li><img src="JavaScript-logo.png" alt="js-logo" style="width:24vw; margin:10px;"</li>
+                  <li>Familiarity with SQL and Python</li>
+                </ul>
+              </div>
+            </div>
+            <button class="accordion">Visuals for Web Design</button>
+            <div class="panel">
+              <div class="list">
+                <ul>
+                  <li>Vector Art<br><img src="dtn.png" alt="vector-art-sample"</li>
+                  <li>Logo Design<br><img src="mswd3.png" alt="logo-design-sample"></img></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
 
-<noscript>Javascript functions incompatible with browser configurations.
-</noscript>
-</body>
-</html>
+        <section class="sliderSection" id="socMedAnalysisSection">
+          <button class="accordionHeader" id="socMedAnalysisAcc" style="background-image: url('rgb3dGallery-3.png');background-repeat:no-repeat;background-size:100%;background-position:center;min-height: min-content;background-attachment:scroll;">
+            <h2>Social Media Analysis</h2>
+          </button>
+          <div class="panel" id="socMedAnalysisPan">
+            <button class="accordion">
+              Content Clustering Model Testing  | Accenture
+              <br>(2019-2020)
+            </button>
+            <div class="lipanel" style="display: none;">
+              <div class="list">
+                <ul>
+                  <li>Benchmarked precision of machine learning model against content review guidelines
+                    in collaboration with client engineers and policy experts</li>
+                    <li>Performed qualitative and quantitative analyses of social media content and associated assets</li>
+                    <li>Project resulted in 400% increase in model production</li>
+                  </ul>
+                </div>
+              </div>
+              <button class="accordion">
+                Cross-Functional Tool Pilot Project | Accenture
+                <br>(Jan 2019 – Mar 2020)
+              </button>
+              <div class="lipanel" style="display: none;">
+                <div class="list">
+                  <ul>
+                    <li>Test monitoring tool capabilities for analytic tasks</li>
+                    <li>Recommend features to client engineers that would optimize tool for risk assessment and threat investigations</li>
+                    <li>Document, track, and help troubleshoot tool bugs</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="sliderSection" id="workExperienceSection">
+            <button class="accordionHeader" id="workExperienceAcc" style="background-image: url('rgb3dGallery-4.png');background-repeat:no-repeat;background-size:100%;background-position:center;min-height: min-content;background-attachment:scroll;">
+              <h2>Work Experience</h2>
+            </button>
+            <div class="panel" id="workExperiencePan">
+              <button class="accordion">
+                Content Analyst
+              </button>
+              <div class="lipanel" style="display: none;">
+                <div class="list">
+                  <ul>
+                    <li>Social Media Policy Enforcement</li>
+                    <li>ML Model Training</li>
+                    <li>Policy Development</li>
+                  </ul>
+                </div>
+              </div>
+              <button class="accordion">
+                Customer Service
+              </button>
+              <div class="lipanel" style="display: none;">
+                <div class="list">
+                  <ul>
+                    <li>Analyzing SMB UI and Customer Success tools</li>
+                    <li>Consulting with trend reports, quantitative and qualitative analysis, and cross-functional projects</li>
+                    <li>Coordinating with patient navigators and third parties in delivering patient assistance program services</li>
+                  </ul>
+                </div>
+              </div>
+              <button class="accordion">
+                Lecture Materials Developer
+              </button>
+              <div class="lipanel" style="display: none;">
+                <div class="list">
+                  <ul>
+                    <li>Create infographics</li>
+                    <li>Edit lecture outline</li>
+                    <li>Prepare lecture presentation slides</li>
+                  </ul>
+                </div>
+              </div>
+              <button class="accordion">
+                Sales
+              </button>
+              <div class="lipanel" style="display: none;">
+                <div class="list">
+                  <ul>
+                    <li>Telecommunications sales account management</li>
+                    <li>Lead Generation and Lead Conversion</li>
+                    <li>Upselling experience in the hospitality industry</li>
+                  </ul>
+                </div>
+              </div>
+              <button class="accordion">
+                Technical Support
+              </button>
+              <div class="lipanel" style="display: none;">
+                <div class="list">
+                  <ul>
+                    <li>Call center experience assisting customers with technical service problems and payment account issues</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <div id="aboutSection">
+        <h1>A little about me:</h1>
+        <div id="aboutPhoto">
+          <img src="commonCauseColor.svg" alt="icon featuring overlapping hearts"/>
+        </div>
+        <div id="aboutText">
+          <ul>
+            <li>Current goals include:
+              <ul>
+                <li>Find work developing valuable web products</li>
+                <li>Learn about web and network security</li>
+                <li>Create great tools and art</li>
+                <li>Become a better self-taught web developer and programmer</li>
+              </ul>
+            </li>
+            <li>Educational background in natural and health sciences</li>
+            <li>Best days include the joys of food, music, and nature</li>
+            <li>Feel free to connect on Github: https://github.com/linares-m</li>
+          </ul>
+          <button id="aboutClose">Close</button>
+        </div>
+      </div>
+
+      <noscript>Javascript functions incompatible with browser configurations.
+      </noscript>
+    </body>
+    </html>
